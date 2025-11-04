@@ -1,9 +1,0 @@
-Crie um Ambiente Virtual (Recomendado):
-
-python -m venv venv
-# No Windows: venv\Scripts\activate
-
-Inicie o Servidor Flask:
-Certifique-se de que o serviço do Ollama já está rodando em segundo plano. Em seguida, execute o app.py:
-
-python app.py

@@ -75,6 +75,7 @@ body {
     padding: 0.75rem 1rem;
     border-radius: var(--border-radius);
     word-wrap: break-word;
+    line-height: 1.6;
 }
 
 .user-message {
@@ -90,6 +91,7 @@ body {
 
 .assistant-message {
     align-self: flex-start;
+    max-width: 95%; /* Aumentado para acomodar conteúdo formatado */
 }
 
 .assistant-message .message-content {
@@ -97,6 +99,106 @@ body {
     color: var(--text-dark);
     border-bottom-left-radius: 4px;
 }
+
+/* ============================================ */
+/* ESTILOS PARA FORMATAÇÃO DAS RESPOSTAS */
+/* ============================================ */
+
+.ciclo-header {
+    background: linear-gradient(135deg, #121638 0%, #1e2a5e 100%);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0 12px 0;
+    box-shadow: 0 2px 8px rgba(18, 22, 56, 0.3);
+    border-left: 4px solid #3b5998;
+}
+
+.semana-header {
+    background: #f0f0f2;
+    border-left: 4px solid #121638;
+    padding: 10px 14px;
+    margin: 16px 0 10px 0;
+    font-weight: 600;
+    font-size: 1em;
+    color: #1a1a1a;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.material-item {
+    padding: 8px 12px;
+    margin: 8px 0 4px 0;
+    background: #ffffff;
+    border-radius: 6px;
+    font-size: 0.95em;
+    border-left: 3px solid #e0e0e0;
+    transition: border-color 0.2s;
+}
+
+.material-item:hover {
+    border-left-color: #121638;
+}
+
+.material-tipo {
+    font-weight: 600;
+    color: #121638;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.material-link {
+    padding: 6px 12px;
+    margin: 4px 0 12px 16px;
+    font-size: 0.88em;
+}
+
+.material-link a {
+    color: #2563eb;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s;
+}
+
+.material-link a:hover {
+    color: #121638;
+    text-decoration: underline;
+}
+
+.separador {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c5c5c5, transparent);
+    margin: 18px 0;
+}
+
+.erro {
+    color: #dc3545;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid #dc3545;
+    margin: 10px 0;
+}
+
+/* Parágrafos dentro das mensagens */
+.message-content p {
+    margin: 8px 0;
+    line-height: 1.7;
+}
+
+.message-content p:first-child {
+    margin-top: 0;
+}
+
+.message-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================ */
+/* FIM DOS ESTILOS DE FORMATAÇÃO */
+/* ============================================ */
 
 .chat-input-area {
     padding: 1rem;
@@ -138,7 +240,7 @@ body {
 }
 
 #chat-form button:hover {
-    background-color: #056b3;
+    background-color: #1e2a5e;
 }
 
 #chat-form button svg {
@@ -172,3 +274,30 @@ body {
 .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
 .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
 @keyframes blink { 0%, 60%, 100% { opacity: 0; } 30% { opacity: 1; } }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .chat-container {
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+
+    .assistant-message {
+        max-width: 95%;
+    }
+
+    .ciclo-header {
+        font-size: 1em;
+        padding: 10px 12px;
+    }
+
+    .semana-header {
+        font-size: 0.95em;
+        padding: 8px 12px;
+    }
+}

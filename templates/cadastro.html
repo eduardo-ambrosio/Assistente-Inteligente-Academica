@@ -48,7 +48,19 @@
             <p>Crie sua conta</p>
         </div>
         <div class="signup-body">
+            <!-- Mensagens de erro do servidor -->
+            {% if erro %}
+            <div class="alert alert-error show">{{ erro }}</div>
+            {% endif %}
+
+            <!-- Mensagens de sucesso do servidor -->
+            {% if sucesso %}
+            <div class="alert alert-success show">{{ sucesso }}</div>
+            {% endif %}
+
+            <!-- Mensagens de validação JavaScript -->
             <div id="alert" class="alert"></div>
+
             <form id="signupForm" method="POST" action="{{ url_for('cadastro') }}">
                 <div class="form-group">
                     <label for="nomeCompleto">Nome completo</label>
@@ -70,13 +82,13 @@
                     <label for="curso">Curso</label>
                     <select id="curso" name="curso" required>
                         <option value="">Selecione seu curso</option>
-                        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
-                        <option value="si">Sistemas de Informação</option>
-                        <option value="cc">Ciência da Computação</option>
-                        <option value="eng">Engenharia de Software</option>
-                        <option value="ia">Inteligência Artificial</option>
-                        <option value="redes">Redes de Computadores</option>
-                        <option value="seguranca">Segurança da Informação</option>
+                        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Engenharia de Software">Engenharia de Software</option>
+                        <option value="Inteligência Artificial">Inteligência Artificial</option>
+                        <option value="Redes de Computadores">Redes de Computadores</option>
+                        <option value="Segurança da Informação">Segurança da Informação</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -108,6 +120,7 @@
         const passwordInput = document.getElementById('password');
         const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
         const confirmPasswordInput = document.getElementById('confirmPassword');
+
         function togglePasswordVisibility(toggleBtn, inputField) {
             toggleBtn.addEventListener('click', function(){
                 const type = inputField.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -117,8 +130,11 @@
                     : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
             });
         }
+
         togglePasswordVisibility(togglePassword, passwordInput);
         togglePasswordVisibility(toggleConfirmPassword, confirmPasswordInput);
+
+        // Máscara de CPF
         document.getElementById('cpf').addEventListener('input', function(e){
             let value = e.target.value.replace(/\D/g, '');
             if (value.length <= 11) {
@@ -128,14 +144,27 @@
                 e.target.value = value;
             }
         });
+
         const signupForm = document.getElementById('signupForm');
         const alertBox = document.getElementById('alert');
+
         signupForm.addEventListener('submit', function(e){
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
-            if (password !== confirmPassword) { e.preventDefault(); show('As senhas não coincidem.', 'error'); return false; }
-            if (password.length < 6) { e.preventDefault(); show('A senha deve ter no mínimo 6 caracteres.', 'error'); return false; }
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                show('As senhas não coincidem.', 'error');
+                return false;
+            }
+
+            if (password.length < 6) {
+                e.preventDefault();
+                show('A senha deve ter no mínimo 6 caracteres.', 'error');
+                return false;
+            }
         });
+
         function show(message, type){
             alertBox.textContent = message;
             alertBox.className = `alert alert-${type} show`;

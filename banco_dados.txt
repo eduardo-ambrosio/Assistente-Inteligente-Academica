@@ -1,0 +1,925 @@
+# HORÁRIO ACADÊMICO - Sistema de IA
+# Estrutura: DIA_SEMANA; DISCIPLINA; HORARIO_INICIO; HORARIO_FIM
+# Data de Atualização: 2025
+
+SEGUNDA-FEIRA; Cidadania ética e espiritualidade; 19:00; 20:40
+SEGUNDA-FEIRA; Introdução a engenharia de soluções; 21:00; 22:40
+TERÇA-FEIRA; Introdução a engenharia de soluções; 19:00; 22:40
+QUARTA-FEIRA; Fundamentos matemáticos para computação; 19:00; 22:40
+QUINTA-FEIRA; Fundamentos de computação e infraestrutura; 19:00; 22:40
+SEXTA-FEIRA; Fundamento de engenharia de dados; 19:00; 22:40
+EAD; Introdução a língua portuguesa;
+--------------------------------------------------------------------------------
+
+# LISTA DE COMPONENTES INTEGRADO 
+# As matérias listadas abaixo podem ser usadas para outros requisitos (Ex: Histórico de Notas)
+
+COMPONENTE: Cidadania ética e espiritualidade
+COMPONENTE: Introdução a engenharia de soluções
+COMPONENTE: Fundamentos matemáticos para computação
+COMPONENTE: Fundamentos de computação e infraestrutura
+COMPONENTE: Fundamentos de engenharia de dados
+COMPONENTE: Leitura e interpretação de texto
+
+--------------------------------------------------------------------------------
+
+# LISTA DE PROFESSORES
+# A lista de professores também possui a informação da Coordenação do curso
+
+PROFESSOR: Holehon Santos Campos
+PROFESSOR: Eder José Almeida da Silva
+PROFESSOR: Henrique Valle de Lima
+PROFESSOR: Jeferson Silva Araújo
+PROFESSOR: Fábio Pereira Botelho
+PROFESSOR: Leonardo Rodrigues de Souza
+COORDENADORA: Natasha Sophie Campos
+
+--------------------------------------------------------------------------------
+
+# RELAÇÃO COMPONENTExPROFESSOR
+# Um único professor abaixo pode estar presente em mais de uma matéria
+
+COMPONENTE: Cidadania ética e espiritualidade - PROFESSOR: Holehon Santos Campos
+COMPONENTE: Introdução a engenharia de soluções - PROFESSOR: Eder José Almeida da Silva
+COMPONENTE: Fundamentos matemáticos para computação - PROFESSOR: Henrique Valle de Lima
+COMPONENTE: Fundamentos de computação e infraestrutura - PROFESSOR: Jeferson Silva Araújo
+COMPONENTE: Fundamentos de engenharia de dados - PROFESSOR: Fábio Pereira Botelho
+COMPONENTE: Leitura e interpretação de texto - PROFESSOR: Leonardo Rodrigues de Souza
+
+--------------------------------------------------------------------------------
+
+# RELAÇÃO DE ALUNOS GRUPO 1
+# A turma está dividida em 4 grupos
+
+ALUNO: Eduardo Ambrósio Silva
+ALUNO: Enzo Lopes Garcia
+ALUNO: João Pedro da Silva Reis
+ALUNO: Mateus Ribeiro Basilio Dos Santos
+ALUNO: Luiz Felipe Mendes Oliveira
+ALUNO: 
+ALUNO: 
+
+--------------------------------------------------------------------------------
+# RELAÇÃO DE ALUNOS GRUPO 2
+# A turma está divida em 4 grupos
+
+ALUNO: Youssef Tahan Cury Porto
+ALUNO: João Pedro Propercio de Carvalho
+ALUNO: João Gabriel Neres Araújo da Hora
+ALUNO: João Victor Domingues Paulo
+ALUNO: João Vitor de Freitas Lobo
+ALUNO: Nicolas Barcellos dos Reis
+ALUNO: Tales Ferreira Soares Barbosa Neves 
+
+--------------------------------------------------------------------------------
+
+# RELAÇÃO DE ALUNOS GRUPO 3
+# A turma está divida em 4 grupos
+
+ALUNO: Emily Silva Rodrigues 
+ALUNO: Francielle Gonçalves 
+ALUNO: Jordan Vidal Fernandes de Carvalho
+ALUNO: Rafael Ferreira de Oliveira
+ALUNO: João Pedro Carlos Indalecio dos Santos 
+ALUNO: Lavínia Carvalhaes Ferreira  
+ALUNO: Samuell Faleiro de Sá
+
+--------------------------------------------------------------------------------
+
+# RELAÇÃO DE ALUNOS GRUPO 4
+# A turma está divida em 4 grupos
+
+ALUNO: Matheus Felipe da Silva Ferreira 
+ALUNO: Isadora Marques Gonçalves 
+ALUNO: João Pedro 
+ALUNO: Paula Tomazzelli Falcão
+ALUNO: Iram Luiz Soares Filho 
+ALUNO: Felippe Almeida Rodrigues 
+ALUNO: Raidson Costa Ferreira 
+ALUNO: Guilherme Henrique Carvalhal de Oliveira 
+
+--------------------------------------------------------------------------------
+
+# HISTÓRICO DE NOTAS DO ALUNO - IA
+# Estrutura: COMPONENTES INTEGRADO; SEMESTRE; NOTA_FINAL; SITUACAO
+# A nota deve ser um valor numérico (de 0.0 a 10.0)
+# SITUACAO pode ser: Aprovado, Reprovado, Cursando, Pendente
+
+Cidadania ética e espiritualidade; 1; 8.5; Aprovado
+Introdução a engenharia de soluções; 1; 7.0; Aprovado
+Fundamentos matemáticos para computação; 1; 6.2; Aprovado
+Fundamentos de computação e infraestrutura; 2; 9.0; Cursando
+Fundamentos de engenharia de dados; 2; 5.5; Cursando
+
+--------------------------------------------------------------------------------
+
+# CALENDÁRIO ACADÊMICO 2025.2
+# Este calendário está disponível também na plataforma do Lyceum para alunos e professores da universidade
+# Estrutura: MÊS; DATA; DESCRIÇÃO; TIPO
+
+Julho; 14 a 28; Período de rematrícula on-line; Acadêmico;
+Julho; 26; Feriado Municipal; Feriado;
+Julho; 28 a 30; 49º Seminário de Atualização de Práticas Docentes e Planejamento Acadêmico; Acadêmico;
+Julho; 30; Colação de Grau Unificada; Acadêmico;
+Julho; 31; Feriado Municipal: Aniversário de Anápolis 118 anos; Feriado;
+
+Agosto; 01; 49º Seminário de Atualização de Práticas Docentes e Planejamento Acadêmico; Acadêmico;
+Agosto; 04; 1º Dia Letivo / Início das Aulas; Letivo;
+Agosto; 04 a 15; Integração Acadêmica e Acolhida dos Calouros; Acadêmico;
+Agosto; 11; Dia do Estudante; Comemorativo;
+Agosto; 19; Prêmio Mérito Científico; Acadêmico;
+Agosto; 27 a 29; 3º Congresso Internacional de Integração Fé e Aprendizagem; Acadêmico;
+Agosto; 29; Último prazo para inclusão/exclusão de disciplina no Lyceum; Acadêmico;
+
+Setembro; 07; Feriado Nacional: Independência do Brasil; Feriado;
+Setembro; 10; Último prazo para lançamento da frequência de agosto no Lyceum; Acadêmico;
+Setembro; 12; Último prazo para entrega dos Planos de Ensino; Acadêmico;
+Setembro; 15 a 20; 1ª Verificação de Aprendizagem 1ª VA; Avaliação;
+
+Outubro; 03; Último prazo para lançamento das notas de 1ª VA no Lyceum; Acadêmico;
+Outubro; 10; Último prazo para lançamento da frequência de setembro no Lyceum; Acadêmico;
+Outubro; 12; Feriado Nacional; Feriado;
+Outubro; 15; Dia do Professor; Comemorativo;
+Outubro; 20 a 23; VI Congresso Internacional de Pesquisa; Ensino e Extensão CIPEEX; Acadêmico;
+Outubro; 26; Vestibular para Medicina; Campus Anápolis; Acadêmico;
+Outubro; 27 a 31; 2ª Verificação de Aprendizagem 2ª VA; Avaliação;
+Outubro; 31; Último prazo para trancamento de matrícula; Acadêmico;
+
+Novembro; 01; 2ª Verificação de Aprendizagem 2ª VA; Avaliação;
+Novembro; 02; Feriado Nacional: Finados; Feriado;
+Novembro; 11 e 12; Avaliações substitutivas de 1ª e 2ª Verificação de Aprendizagem; Avaliação;
+Novembro; 14; Último prazo para lançamento das notas de 2ª VA no Lyceum; Acadêmico;
+Novembro; 15; Feriado Nacional: Proclamação da República; Feriado;
+Novembro; 20; Feriado Nacional: Dia da Consciência Negra; Feriado;
+Novembro; 29; Vestibular Geral; Acadêmico;
+
+Dezembro; 08 a 13; 3ª Verificação de Aprendizagem 3ª VA; Avaliação;
+Dezembro; 10; Último prazo para lançamento da frequência de novembro no Lyceum; Acadêmico;
+Dezembro; 16 e 17; Avaliações substitutivas de 3ª Verificação de Aprendizagem; Avaliação;
+Dezembro; 19; Último prazo para lançamento das notas de 3ª VA no Lyceum; Acadêmico;
+Dezembro; 25; Feriado Nacional: Natal; Feriado;
+
+Janeiro; 01; Feriado Nacional: Confraternização Universal; Feriado;
+Janeiro; 12 a 28; Período para rematrícula on-line; Acadêmico;
+Janeiro; 26 e 30; Seminário de Atualização de Práticas Docentes e Planejamento Acadêmico;
+
+--------------------------------------------------------------------------------
+
+# NOTAS DE AVALIAÇÕES
+# Estas notas se referem a apenas um aluno
+# ESTRUTURA: CICLO; DESCRIÇÃO; NOTA
+
+Ciclo 1; AFE - Avaliação Final de entrega; 29,00;
+Ciclo 1; VRAU - Verificação Regular de Aprendizagem Unificada; 17,82;
+Ciclo 1; PI - Projeto Integrador; 7,80;
+Ciclo 1; Avaliação 360°; 9,30;
+
+--------------------------------------------------------------------------------
+
+# LEGENDA E INFORMAÇÕES ADICIONAIS
+# Situações:
+# Aprovado: Nota final igual ou superior a 6.0 
+# Reprovado: Nota final inferior a 6.0
+# Cursando: Matéria em andamento (notas parciais, sem nota final)
+# Pendente: Aguardando lançamento de nota ou situação de dependência
+
+-------------------------------------------------------------------------------
+
+>CONTEÚDO DE CADA COMPONENTE INTEGRADO 
+>ESTES CONTEÚDO É APLICADO EM SALA DE AULA
+
+#COMPONENTE: Cidadania ética e espiritualidade
+
+--- 
+
+##CICLO: 01
+
+###SEMANA 01
+ **CONTEÚDO:** FAÇA SUA VIDA VALER A PENA, ANTES QUE SEJA TARDE
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/PmMk2ZNiJqY?si=9WpjrhA5ru7ih4bI
+ **DESCRIÇÃO:**Sabia que um dia eu vou crescer e tudo vai ficar diferente porque por mais que a gente não perceba e ás vezes se recusa acreditar o tempo voa e com ele mais que a minha imagem o risco é deixar de lado minhas idéias meus sonhos minhas vontades minha essência . Esquecer quem eu sou. E você nem perceber. Você já pensou nisso? O problema é que a vida passa diante dos nossos olhos e a gente nem percebe e depois tarde de mais vai querer saber o que fez. Bom, sem ter tempo de recuperar. Enquanto da tempo faça a sua vida valer a pena, ANTES QUE SEJA TARDE DE MAIS
+
+ ###SEMANA 02
+ **CONTEÚDO:** INTELIGÊNCIA ESPIRITUAL
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/XT9XYRz2WvY?si=XX2LrAol2wFx7oK3
+ **DESCRIÇÃO:** TER INTELIGÊNCIA ESPIRITUAL AO MEIO DAS TEMPESTADES DA VIDA, ALEGRIA E PERDAS
+
+###SEMANA 03
+ **CONTEÚDO:** COSMOVISÃO, O QUE É?
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/eBH-U5JDwrY?si=zyRuWCixX7VIkAJT
+ **DESCRIÇÃO:** Estudos sobre cosmovisão estão em alta nos dias de hoje e têm se tornado muito popular no meio teológico. Mas o que é cosmovisão? De onde veio o conceito?
+
+###SEMANA 04
+ **CONTEÚDO:**
+
+ **MATERIAL 1**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1IGlyEQI80drhDEisTrWlwsQ1P6H3HgFn/view?usp=drive_link
+ **DESCRIÇÃO:** SUMARIO DE COSMOVISAO
+
+---
+
+##CICLO: 02
+
+###SEMANA 05
+ **CONTEÚDO:** LICÃO 1 / O QUE É COSMOVISAO - JONAS MADUREIRA
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/BKVhhtnHRqs?si=uIwUW74DJ7wv-QWe
+ **DESCRIÇÃO:** A primeira lição visa a apresentar o conceito de cosmovisão à luz do enigma da vida, tal como sugeriu Wilhelm Dilthey, em “Teoria da cosmovisão” (1911)
+
+###SEMANA 08
+ **CONTEÚDO:** COSMOVISÃO
+
+ **MATERIAL 1**
+ **TIPO:** LIVRO/PDF
+ **LINK:** https://drive.google.com/file/d/1dkY9xyDslmcreaDRe5BrTSNgYU9U0paG/view?usp=drive_link
+ **DESCRIÇÃO:**O UNIVERSO AO LADO / UM CATÁLOGO SOBRE COSMOVISÃO
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/K8jSXfP7bhU?si=gxmeVTVJfMyWH0xF
+ **DESCRIÇÃO:** KARNAL: VOLUNTARIADO É UMA CHANCE MUITO GRANDE  NA VIDA
+
+---
+
+##CICLO: 03
+
+###SEMANA: 09
+ **CONTEÚDO:** PROPÓSITO DE VIDA
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/HnDbpr1A01o?si=jWd-SzXDS2wOY1Z4
+ **DESCRIÇÃO:** COMO DESCOBRIR O SEU PROPOSITO DE VIDA COM FLÁVIO AUGUSTO
+
+###SEMANA 10
+ **CONTEÚDO:** VOCAÇÃO PROFISSIONAL
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:**https://youtu.be/e09QrMZB7gU?si=Owx8n3yK3anqr9Ly
+ **DESCRIÇÃO:** COMO DESCOBRIR SUA VOCAÇÃO PROFISSIONAL
+
+###SEMANA 11
+ **CONTEÚDO:** GERAÇÕES X,Y(MILLENIALS)
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/HkJFwUVzyfg?si=EL9SLzZjV7auzpez
+ **DESCRIÇÃO:** DIFERNÇAS ENTRE A GERAÇÕES DA HUMANIDADE
+
+----------------------------------------------------------------
+
+#INTRODUÇÃO A ENGENHARIA DE SOLUÇÕES
+>PROFESSOR: EDER
+
+---
+
+##CICLO: 01
+
+###SEMANA 01
+ **CONTEÚDO:** INTELIGÊNCIA ARTIFICIAL NO TRABALHO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO 
+ **LINK:** https://youtu.be/nC7_jjPZ3ys?si=iu2UocBe8z0MWF0F
+ **DESCRIÇÃO:** Você precisa mapear processos, mas quer fugir do caminho mais demorado e burocrático?
+
+ **MATERIAL 2**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/1peR1Xrwn2ggUVQ2lzvc1GY8J_qTDZDU9/view?usp=drive_link
+ **DESCRIÇÃO:** Ciclo de Vida de Soluções em Inteligência Artificial
+
+
+###SEMANA 02
+ **CONTEÚDO:** Aplicação de Design Thinking e Mapas de Empatia
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/7hZMGSamsYA?si=-qmPBgKf5B3VRG-g
+ **DESCRIÇÃO:** O QUE É DESIGN THINKING?
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/7rHWAW2-190?si=OFqLh12l-czKVLhi
+ **DESCRIÇÃO:** DESIGN THINKING EM 7 PASSOS
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1l_kDaMan8O6nva22UqIFJuOoxOYlWWSq/view?usp=drive_link
+ **DESCRIÇÃO:** Design Thinking e Mapas de Empatia: Uma Abordagem Centrada no Usuário
+
+###SEMANA 03
+ **CONTEÚDO:** Requisitos e Histórias de Usuário
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/4PcB09wCBnI?si=KxUJ_51-9SerfS8o
+ **DESCRIÇÃO:** 10 DICAS PARA ESCREVER HISTÓRIAS DE USUÁRIO
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/pLJ3LxR292w?si=HG7cbDkTTs_n4B1l
+ **DESCRIÇÃO:** Guia definitivo para Histórias de Usuário - Product Management
+
+ **MATERIAL 3**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/yG6GUqrje1k?si=Uz4y5jvWPTTvRqq5
+ **DESCRIÇÃO:** REQUISITOS ÁGEIS - Como escrever histórias de usuário incríveis!
+
+ **MATERIAL 4**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1PiM4QTAOCURNSsLlqV49v7qGi1hOTlEY/view?usp=drive_link
+ **DESCRIÇÃO:** Requisitos e Histórias de Usuário
+
+###SEMANA 04
+ **CONTEÚDO:** METODOLOGIAS ÁGEIS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/aGWjnLThBfQ?si=4UMHz_5AO2oEn42-
+ **DESCRIÇÃO:** Como aplicar o SCRUM utilizando o Trello
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/GqYvzLHZUIk?si=vkYttqDOeliWErma
+ **DESCRIÇÃO:** SCRUM + TRELLO
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1vC05OY8WCg88zazhnolFc5FWE67_gvbE/view?usp=drive_link
+ **DESCRIÇÃO:** O QUE PRIORIZAR NO BACKLOG
+ 
+ **MATERIAL 4**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1SOFWZn5Nnhi-_IuuCU1Lt_XVaWJZPhEq/view?usp=sharing
+ **DESCRIÇÃO:** ESTRUTURA ANALITICA DE UM PROJETO
+
+---
+
+##CICLO: 02
+
+###SEMANA 05
+ **CONTEÚDO:** PROTÓTIPOS
+
+ **MATERIAL 1**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/1xAnHJTA39DLdmIyGqUy_hmw31GhJLo9y/view?usp=drive_link
+ **DESCRIÇÃO:** PROTÓTIPOS VISUAIS-DE-BAIXA-FIDELIDADE
+ 
+
+###SEMANA 06
+ **CONTEÚDO:**
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/EDQGZEsNARg?si=NpeX63qnvaBc-F7N
+ **DESCRIÇÃO:** COMO INSTALAR E CONFIGURAR O PYCHARM PYTHON
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/i-5nYErMVsk?si=pNQgi4ELgnB2sah7
+ **DESCRIÇÃO:** PyCharm - Configurações e Como Funciona
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/15dl8Hrph2nH7prdriL05yy9l9vJtis95/view?usp=drive_link
+ **DESCRIÇÃO:** DEFINIÇÃO DO MVP E PRIMEIRA LOGICA EM PYTHON
+
+###SEMANA 07
+ **CONTEÚDO:**
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/BPlxRBWzmzY?si=0I1J6uRj5VGqzsIu
+ **DESCRIÇÃO:** Como criar Repositórios - Git, GitHub e PyCharm criando e subindo repositório
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/-yVwoyxP-9k?si=GnnPC-iOFCeTXnDx
+ **DESCRIÇÃO:** Como trabalhar no GitHub com PyCharm
+
+ **MATERIAL 3**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/EGmzAs1G0z0?si=ZwTUMqj9ke_6DvZw
+ **DESCRIÇÃO:** Como usar Git e GitHub da Forma mais Fácil Possível
+
+ **MATERIAL 4**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/19IhAsG2zopAMDN2RdcqM2NHdDsFjVxgc/view?usp=sharing
+ **DESCRIÇÃO:** Estruturação de Software e Modularidade
+
+###SEMANA 
+ **CONTEÚDO:**
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/192HgwRgOYE?si=QyKDaieS3XcPCFqX
+ **DESCRIÇÃO:** Curso de Git e Github [Completo] - Aprenda o Essencial em 2 horas
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/hwqInUI9rc8?si=R1CtHjiWxkYBbFlr
+ **DESCRIÇÃO:** Tutorial GitHub PyCharm
+
+---
+
+##CICLO: 03
+
+###SEMANA 09
+ **CONTEÚDO:** APIs SIMULADAS
+
+ **MATERIAL 1**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/190bGQ7L7n54XWlD_Fey1Pf-Q_m4k-Xax/view?usp=drive_link
+ **DESCRIÇÃO:** Funcionalidades Avançadas e APIs Simuladas
+
+
+----------------------------------------------------------------
+
+#FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO
+>PROFESSOR: HENRIQUE
+
+---
+
+##CICLO: 01
+
+###SEMANA 01
+ **CONTEÚDO:** RACIOCÍNIO LÓGICO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/KXm8Hi-I_G0?si=M_hKP1ZVQIaTkFla
+ **DESCRIÇÃO:** RACIOCÍNIO LÓGICO - PROPOSIÇÕES E TABELA VERDADE
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1-9hZejOjCUYNv70CsCSJ9w7lvcfjLvQb/view?usp=drive_link
+ **DESCRIÇÃO:** Lógica Proposicional: Conectivos e Tabelas-Verdade
+
+###SEMANA 02
+ **CONTEÚDO:** RACIOCÍNIO LÓGICO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/iV3lmqHW6oQ?si=NMxbZh3auUgDxIBE
+ **DESCRIÇÃO:** TAUTOLOGIA, CONTRADIÇÃO E CONTIGÊNCIA
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1O5LlvUB09dEmd4KKEmOOeHArk9huhN93/view?usp=drive_link
+ **DESCRIÇÃO:** Lógica Proposicional: tautologias, equivalências e inferências
+
+###SEMANA 03
+ **CONTEÚDO:** LÓGICA DE PREDICADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/NbZ980l5TBY?si=ma0p4MhtJLi0wZJP
+ **DESCRIÇÃO:** PEDRICADOS, QUANTIFICADORES E FUNÇÕES
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1oVSMwC8Cocyz3A3_dS6mjl1K5OZDcqBX/view?usp=drive_link
+ **DESCRIÇÃO:** Lógica de Predicados: entendendo o “para todo” e o “existe”
+
+ ###SEMANA 04
+ **CONTEÚDO:** INTRODUÇÃO A PROGRAMAÇÃO COM PYTHON
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/7zLXR8Zj9EM?si=8JrA0Pz9xqtcQMNw
+ **DESCRIÇÃO:** O QUE SÃO SETS
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1wdNubCGEgkXLalDUl3eJ65y8iHQpfWT9/view?usp=drive_link
+ **DESCRIÇÃO:** Conjuntos: definições, operações e produto cartesiano
+
+---
+
+##CICLO: 02
+
+###SEMANA 05
+ **CONTEÚDO:** FUNÇÕES
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/ZcJ7p2rvKe0?si=KHMPC-CRzqDS12YE
+ **DESCRIÇÃO:** FUNÇÃO COMPOSTA E FUNÇÃO INVERSA
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/12PGT7anhjVgmCr6mqjtJswm102H1nAK8/view?usp=drive_link
+ **DESCRIÇÃO:** Relações e Funções — Composta e Inversa
+
+###SEMANA 06
+ **CONTEÚDO:** MATRIZES
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/_96fo3KAcvM?si=qk-d7zC4YMtC5UFD
+ **DESCRIÇÃO:** Matrizes e Determinantes - Demonstração das Propriedades dos Determinantes
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1ssccNVpxvWbNfiHI5WHVfrezoxQSULvD/view?usp=drive_link
+ **DESCRIÇÃO:** Introdução a Matrizes, Determinantes e Sistemas Lineares
+
+###SEMANA 07
+ **CONTEÚDO:** PERMUTAÇÃO, ARRANJO E COMBINAÇÃO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/_8mZOSXCRp8?si=b2SDNKKFfsLGsHtZ
+ **DESCRIÇÃO:** ANÁLISE COMBINATÓRIA | PERMUTAÇÃO | ARRANJO | COMBINAÇÃO
+
+ **MATERIAL 2**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/1zaghZC9CrNaVtIZRrU5wwIQzdcR83Bgh/view?usp=drive_link
+ **DESCRIÇÃO:**Princípios de Contagem: Arranjos, Permutações e Combinações
+
+###SEMANA 08
+ **CONTEÚDO:** PRINCÍPIO DA INCLUSÃO E EXCLUSÃO
+
+**MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/c_6DrHqR4xI?si=WDHAuwS1WVQi2vkD
+ **DESCRIÇÃO:** Princípio da Inclusão/Exclusão
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/16UTn-1tE_3dDoqMIXlpQWIeEVpk0WMbI/view?usp=sharing
+ **DESCRIÇÃO:** Princípio da Inclusão- Exclusão (PIE) na prática
+
+---
+
+##CICLO: 03
+
+###SEMANA 09
+ **CONTEÚDO:** GRAFOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/NNZ7jL1X2mI?si=cE1phnRUjMTwSpq4
+ **DESCRIÇÃO:** GRAFOS. Introdução à Teoria dos Grafos. Programação, Matemática e Curiosidades.
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/18WBJqC3wjdsU3seGvrWPHKURgT_t5r75/view?usp=drive_link
+ **DESCRIÇÃO:** Teoria dos Grafos 4 Vértices, Arestas, Caminhos e Ciclos
+
+###SEMANA 10
+ **CONTEÚDO:** MAPA DE KARNAUGH
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/XL_RYcMJCf0?si=3l-fUcLVkQfBe-_N
+ **DESCRIÇÃO:** MAPA DE KARNAUGH DE 3 VARIÁVES
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1KKeCXVjl0-6sRnzwrT1xX6EpDs0ra0iX/view?usp=drive_link
+ **DESCRIÇÃO:**Álgebra Booleana e Circuitos Lógicos
+
+----------------------------------------------------------------
+
+#FUNDAMENTOS DE COMPUTAÇÃO E INFRAESTRUTURA
+>PROFESSOR: JEFFERSON
+
+---
+
+##CICLO: 01
+
+###SEMANA 01
+ **CONTEÚDO:** SISTEMA DE NUMERAÇÃO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/q3xLvOsqhpo?si=JTF_Q79BPTN5VjhH
+ **DESCRIÇÃO:** Entenda o sistema binário e como ele funciona
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/ma0LQeKb8es?si=SqcWRj1eztWMG3Nc
+ **DESCRIÇÃO:** ENTENDA O SISTEMA HEXADECIMAL E COMO ELE FUNCIONA
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1yq_1M88eagAKYIKmQ-duPXS_W9IKiEDh/view?usp=drive_link
+ **DESCRIÇÃO:** SISTEMA DE NUMERAÇÃO
+
+###SEMANA 02
+ **CONTEÚDO:** PYTHON/ VARIAVEIS E TIPOS DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/H-RYLSUtUsI?si=nRf79GGtQIbPeVjn
+ **DESCRIÇÃO:** APRENDA AGORA AS VARIÁVEIS E TIPOS DE DADOS EM PYTHON
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/115VFtTG5gZkjnfJe4y-WIgz3NTbUMiWv/view?usp=drive_link
+ **DESCRIÇÃO:** DADOS DE ENTRADA E SAIDA
+
+###SEMANA 03
+ **CONTEÚDO:** ARQUITETURA DE COMPUTADORES
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/GRuTNQlLxrU?si=W70VHUzyWWJOHvfG
+ **DESCRIÇÃO:** O que é um processador e qual a sua função? (Informática Básica)
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/dVHD2BKZklc?si=c3U3KlpO5E8fjsQL
+ **DESCRIÇÃO:** DIFERENÇA ENTRE ARQUITETURA CISC E RISC
+
+ **MATERIAL 3**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/1gX92SelFBrf5E-k3ZNatubfP4iT9TiGI/view?usp=drive_link
+ **DESCRIÇÃO:** Arquitetura de Computadores: Componentes Principais
+
+###SEMANA 
+ **CONTEÚDO:** ESTRUTURA DOS SISTEMAS OPERACIONAIS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/yjfB-asZVF4?si=Yevi1QHs-XLBab_9
+ **DESCRIÇÃO:** O que é um sistema operacional e exemplos 
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/44P_feaO1EU?si=2g_SMhkdcCCTUpAu
+ **DESCRIÇÃO:** Conheça quais os tipos de sistemas operacionais existentes
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1m_GkaImYUO2NdS_yPFpKu66IEW2qwZ-4/view?usp=drive_link
+ **DESCRIÇÃO:** SISTEMAS OPERACIONAIS
+
+##CICLO: 02
+
+###SEMANA 05
+ **CONTEÚDO:**
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/9WXkvFgsru4?si=PtjECcxvtt2udGFK
+ **DESCRIÇÃO:** FAT32, exFAT e NTFS - Principais diferenças entre sistemas de arquivos
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1SPakkYbSAtFNshpog1_-aQbZYrCZHDfE/view?usp=drive_link
+ **DESCRIÇÃO:** SISTEMA DE ARQUIVOS E INTRODUÇÃO AO LINUX
+
+###SEMANA 06
+ **CONTEÚDO:** SISTEMA LINUX
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/o1_E4PBl30s?si=JRyBKUwt3xkbu06F
+ **DESCRIÇÃO:** Uma das MELHORES coisas que a Microsoft já fez - Aprenda a usar o WSL (Linux dentro do Windows)
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/6FW3L-NePUI?si=oIWec1HTd4z3b9k3
+ **DESCRIÇÃO:** WSL 2 (O Linux definitivamente faz parte do Windows) 
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/122_dlEN730n-nrr4Qi-v_GbZUBHiQ2Gk/view?usp=drive_link
+ **DESCRIÇÃO:** INTRODUÇÃO AO LINUX E WSL
+
+###SEMANA 07
+ **CONTEÚDO:** VIRTUALIZAÇÃO
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/nUjUOoOAkcc?si=G_9Jg5W2VPErGQFA
+ **DESCRIÇÃO:** Como criar uma máquina virtual com Windows ou Linux com facilidade
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/juh6DipSclg?si=3T9wGDWEA22DLYzY
+ **DESCRIÇÃO:** O que é virtualização e máquinas virtuais?
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1N0vDYGc8-c4SCfmrOs2Tl5bFmGi3gMoX/view?usp=drive_link
+ **DESCRIÇÃO:** INTRODUÇÃO A VIRTUALIZAÇÃO
+
+
+###SEMANA 08
+ **CONTEÚDO:** CONTEINERESE E INTRODUÇÃO AO DOCKERS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/ntbpIfS44Gw?si=GUu9I1I59cmUxoKf
+ **DESCRIÇÃO:** O mínimo que você precisa saber sobre Docker!
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1sfZ_BdP2Jo2pooMC6oGuVEi1eUtyreyu/view?usp=drive_link
+ **DESCRIÇÃO:** Contêineres e Introdução ao
+Docker
+
+---
+
+##CICLO: 03
+
+###SEMANA 09
+ **CONTEÚDO:** AMBIENTES COMPUTACIONAIS MODERNOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/wwqTd9OPlaQ?si=ld4sv3LMCCiVXlCL
+ **DESCRIÇÃO:** O que é EDGE COMPUTING? | Locaweb
+
+ **MATERIAL 2**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/1cPZxkwqzSr5M45JCYKeFr9kbGpbNjWGo/view?usp=drive_link
+ **DESCRIÇÃO:** Ambientes Computacionais Modernos
+
+
+###SEMANA 10
+ **CONTEÚDO:** COMPUTAÇÃO EM NUVEM
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/ymZo-ZwXFw8?si=ZwPRCTGb9-HLODFZ
+ **DESCRIÇÃO:** O que é cloud computing e como funciona? (Computação em Nuvem)
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/q3vsAtijvgA?si=ejbx3-G90wb6spMg
+ **DESCRIÇÃO:** Como colocar seu SITE no AR de GRAÇA com o GitHub Pages
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1G3eUNYpLT4fYXE3pA74FJc40opXbgv-4/view?usp=drive_link
+ **DESCRIÇÃO:** COMPUTAÇÃO EM NUVEM
+
+----------------------------------------------------------------
+#FUNDAMENTOS DE ENGENHARIA DE DADOS
+>PROFESSOR: FABIO BOTELHO
+
+---
+
+##CICLO: 01
+
+###SEMANA 01
+ **CONTEÚDO:** DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/mTpkU_rTM94?si=RcrFXWuoBqbfiG38
+ **DESCRIÇÃO:** TIPOS DE DADOS: ESTRUTURADOS, SEMIESTRUTURADOS E NÃO ESTRUTURADOS
+
+ **MATERIAL 2**
+ **TIPO:**SLIDE
+ **LINK:** https://drive.google.com/file/d/17WBAB4GYQxv-vuIGaJ0-lAt6KzWyVdcp/view?usp=drive_link
+ **DESCRIÇÃO:** CONTEXTUALIZAR A ENGENHARIA DE DADOS
+
+###SEMANA 02
+ **CONTEÚDO:** LEITURA, COLETA E EXPLORAÇÃO DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/3aI1UPAhc30?si=iNBYK2Rx8kGJHOB2
+ **DESCRIÇÃO:** LEITURA DE UM CONJUNTO DE DADOS DE SEGURO DE AUTOMOVEIS COM PANDAS
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1DkNso8WUZmMx1rdKafrSIoxWP_ljt2wT/view?usp=drive_link
+ **DESCRIÇÃO:** COLETA E EXPLORAÇÃO DE DADOS EM ARQUIVOS E PLANILHAS
+
+###SEMANA 03
+ **CONTEÚDO:** BANCO DE DADOS E COLETA DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/YlSZfHU7QWY?si=3sTTa1ZZbIeQXq4M
+ **DESCRIÇÃO:** MongoDB Installation on Google Colab VM
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/pO-EeLn9IsU?si=rnP7xsyrkt9fBot-
+ **DESCRIÇÃO:** How to use SQL in Google Colab Notebook? | Data Science | AlmaBetter
+
+ **MATERIAL 3**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/16J9Iw4mbSoZ1VI8JQkm-ykXBWY6zotMF/view?usp=drive_link
+ **DESCRIÇÃO:** COLETA DE DADOS EM BANCOS RELACIONAIS E NOSQL
+
+###SEMANA 04
+ **CONTEÚDO:** INGESTÃO DE DADOS 
+
+ **MATERIAL 1**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/11pR0nrD0Cg7YuFHnLtvAsT8i66QxX4lN/view?usp=drive_link
+ **DESCRIÇÃO:**APROFUNDAMENTO EM INGESTÃO DE DADOS
+
+##CICLO: 02
+
+###SEMANA 05 
+ **CONTEÚDO:** ARQUITETURA DE DADOS E SUAS CAMADAS(MEDALHÃO)
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/F4ltl69WPJw?si=59AzdVhdRn_TqbA7
+ **DESCRIÇÃO:** Domine a Arquitetura Medalhão no Microsoft Fabric: Passo a Passo para o Sucesso!
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/8Qlfs2IohHM?si=oZKoEr4mvQaR-GFe
+ **DESCRIÇÃO:** Data Layers- Raw, Staging, Bronze, Silver, Gold, Archive Layers
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1kVrMd7t-0A0tkPljxRP9uDZp46mVuRAQ/view?usp=drive_link
+ **DESCRIÇÃO:** COLETA DE DADOS
+
+###SEMANA 06
+ **CONTEÚDO:** LIMPEZA DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/10kmcTfoxiM?si=mI3t-u5guoliWSmN
+ **DESCRIÇÃO:** Mineração de Dados - Preparação e limpeza de dados
+
+ **MATERIAL 2**
+ **TIPO:** SLIDE
+ **LINK:** https://drive.google.com/file/d/12q9GDSyF1-ozQw57QTL6A49Dl0ZtOAgg/view?usp=drive_link
+ **DESCRIÇÃO:** LIMPEZA E PREPARAÇÃO DE DADOS
+
+###SEMANA 07
+ **CONTEÚDO:** TRATAMENTO DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1Wu8OPTZ0cUMRKmgU3MJHJ_mLDX_TeSTQ/view?usp=sharing
+ **DESCRIÇÃO:** INCONSISTÊNCIA E DUPLICADAS
+
+###SEMANA 08 
+ **CONTEÚDO:**  BANCO DE DADOS
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/o8i2KZiIW4Y?si=dUmp55cy0SCQ_XJn
+ **DESCRIÇÃO:** Banco de Dados relacional ou Não-relacional | Saiba quando usar SQL ou NoSQL
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/0DNawccmQtM?si=yuxdmZUvl2UMXrPC
+ **DESCRIÇÃO:** Gerenciando as estruturas de armazenamento do banco de dados
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1ijZ6Yte1wN6G4tK25UwEN3Az8AwW4I0o/view?usp=drive_link
+ **DESCRIÇÃO:** ARMAZENAMENTO E ORGANIZAÇÃO PARA IA
+
+---
+
+##CICLO: 03
+
+###SEMANA 09
+ **CONTEÚDO:** DATA WAREHOUSE
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/yU2ikWgdEEs?si=klkl-Yg8kd0T3LE1
+ **DESCRIÇÃO:** Arquitetura Clássica do Data Warehouse
+
+ **MATERIAL 2**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/1RI829QUYgrQQeDFWpK0lemNss87806he/view?usp=drive_link
+ **DESCRIÇÃO:** FUNDAMENTOS DE ENGENHARIA DE DADOS
+
+
+###SEMANA 10
+ **CONTEÚDO:** PIPELINE DE DADOS, ETL E MACHINE LEARNING
+
+ **MATERIAL 1**
+ **TIPO:** VIDEO
+ **LINK:** https://youtu.be/46l0Q65nrAo?si=ZYp9KCfYXqOIREJl
+ **DESCRIÇÃO:**Pipeline de Dados x Pipeline ETL x Pipeline de Machine Learning - Parte 2/2
+
+ **MATERIAL 2**
+ **TIPO:** VIDEO
+ **LINK:** https://www.youtube.com/live/JuOyNPjAer8?si=sCmDeyiNlmJ3liRr
+ **DESCRIÇÃO:** Pipeline ETL com Python: Validando Dados e Planilhas de Excel para BI (Projeto end-to-end!)
+
+ **MATERIAL 3**
+ **TIPO:** SLIDES
+ **LINK:** https://drive.google.com/file/d/11lO5BD10N8ZS1GpG1X93AzkC3TY1lL1h/view?usp=drive_link
+ **DESCRIÇÃO:** ARQUITETURAS DE DADOS PARA BIG DATA

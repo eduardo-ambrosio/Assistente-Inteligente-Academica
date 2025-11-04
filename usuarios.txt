@@ -1,0 +1,7 @@
+# ============================================
+# BANCO DE DADOS DE USUÁRIOS - UNIHELP
+# ============================================
+# Estrutura: RA|NOME|EMAIL|CPF|CURSO|SENHA_HASH|DATA_CADASTRO
+# ================================================================================
+
+445|Eduardo Ambrósio Silva|eduardoambrosio@gmail.com|092.710.111-47|Inteligência Artificial|7ad29e3be0237337229bef14e8b44f9206c9c5343d88b8cd599b8980bc8d532e|2025-11-03 21:00:06
