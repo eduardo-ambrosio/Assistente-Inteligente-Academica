@@ -1,0 +1,68 @@
+# ============================================
+# DADOS PERSONALIZADOS DOS ALUNOS - UNIHELP
+# ============================================
+
+[RA:445]
+NOME: Eduardo Ambrósio Silva
+CURSO: Inteligência Artificial
+GRUPO: Grupo 1
+
+# NOTAS DE AVALIAÇÕES
+# Estrutura: CICLO|DESCRIÇÃO|NOTA
+NOTAS:
+Ciclo 1|AFE - Avaliação Final de entrega|29.00
+Ciclo 1|VRAU - Verificação Regular de Aprendizagem Unificada|17.82
+Ciclo 1|PI - Projeto Integrador|7.80
+Ciclo 1|Avaliação 360°|9.30
+
+# HISTÓRICO DE NOTAS
+# Estrutura: COMPONENTE|SEMESTRE|NOTA|SITUACAO
+HISTORICO:
+Cidadania ética e espiritualidade|1|8.5|Aprovado
+Introdução a engenharia de soluções|1|7.0|Aprovado
+Fundamentos matemáticos para computação|1|6.2|Aprovado
+Fundamentos de computação e infraestrutura|2|9.0|Cursando
+Fundamentos de engenharia de dados|2|5.5|Cursando
+[FIM]
+
+[RA:12345]
+NOME: João Silva Santos
+CURSO: Inteligência Artificial
+GRUPO: Grupo 2
+
+# NOTAS DE AVALIAÇÕES
+NOTAS:
+Ciclo 1|AFE - Avaliação Final de entrega|25.00
+Ciclo 1|VRAU - Verificação Regular de Aprendizagem Unificada|19.50
+Ciclo 1|PI - Projeto Integrador|8.50
+Ciclo 1|Avaliação 360°|10.00
+
+# HISTÓRICO DE NOTAS
+HISTORICO:
+Cidadania ética e espiritualidade|1|9.0|Aprovado
+Introdução a engenharia de soluções|1|8.5|Aprovado
+Fundamentos matemáticos para computação|1|7.8|Aprovado
+Fundamentos de computação e infraestrutura|2|8.2|Cursando
+Fundamentos de engenharia de dados|2|7.5|Cursando
+[FIM]
+
+[RA:67890]
+NOME: Maria Oliveira Costa
+CURSO: Inteligência Artificial
+GRUPO: Grupo 3
+
+# NOTAS DE AVALIAÇÕES
+NOTAS:
+Ciclo 1|AFE - Avaliação Final de entrega|27.50
+Ciclo 1|VRAU - Verificação Regular de Aprendizagem Unificada|18.20
+Ciclo 1|PI - Projeto Integrador|9.00
+Ciclo 1|Avaliação 360°|9.80
+
+# HISTÓRICO DE NOTAS
+HISTORICO:
+Cidadania ética e espiritualidade|1|8.0|Aprovado
+Introdução a engenharia de soluções|1|9.0|Aprovado
+Fundamentos matemáticos para computação|1|8.5|Aprovado
+Fundamentos de computação e infraestrutura|2|9.5|Cursando
+Fundamentos de engenharia de dados|2|8.0|Cursando
+[FIM]

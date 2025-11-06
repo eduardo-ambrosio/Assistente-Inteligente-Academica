@@ -12,8 +12,29 @@
 <body>
     <div class="chat-container">
         <header class="chat-header">
-            <h1>UniHelp</h1>
-            <p>Assistente inteligente</p>
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>UniHelp</h1>
+                    <p>Assistente inteligente</p>
+                </div>
+                <div class="header-actions">
+                    <a href="{{ url_for('historico') }}" class="btn-historico" title="Ver histórico de conversas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v5h5"/>
+                            <path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/>
+                            <path d="M12 7v5l4 2"/>
+                        </svg>
+                        Histórico
+                    </a>
+                    <a href="{{ url_for('logout') }}" class="btn-logout" title="Sair">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                            <polyline points="16 17 21 12 16 7"/>
+                            <line x1="21" y1="12" x2="9" y2="12"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </header>
 
         <div class="chat-messages" id="chat-messages">
@@ -35,10 +56,12 @@
         </div>
 
         <footer class="chat-input-area">
-            <form id="chat-form" method="POST" action="{{ url_for('chat') }}">
+            <form id="chat-form">
                 <input type="text" id="pergunta" name="pergunta" placeholder="Digite sua pergunta..." autocomplete="off" required>
-                <button type="submit" aria-label="Enviar Pergunta">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                <button type="submit" id="btn-enviar" aria-label="Enviar Pergunta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                    </svg>
                 </button>
             </form>
             <button id="clear-chat" title="Limpar conversa">Limpar</button>
@@ -49,7 +72,10 @@
         const chatMessages = document.getElementById('chat-messages');
         const form = document.getElementById('chat-form');
         const input = document.getElementById('pergunta');
+        const btnEnviar = document.getElementById('btn-enviar');
         const clearBtn = document.getElementById('clear-chat');
+
+        let isProcessing = false;
 
         function scrollToBottom() {
             chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -62,9 +88,8 @@
             const messageContent = document.createElement('div');
             messageContent.classList.add('message-content');
 
-            // Se for mensagem do usuário, usa <p>, se for da IA, insere HTML diretamente
             if (sender === 'user') {
-                messageContent.innerHTML = `<p>${content}</p>`;
+                messageContent.innerHTML = `<p>${escapeHtml(content)}</p>`;
             } else {
                 messageContent.innerHTML = content;
             }
@@ -72,7 +97,18 @@
             message.appendChild(messageContent);
             chatMessages.appendChild(message);
             scrollToBottom();
-            return message;
+            return messageContent;
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
         }
 
         function showLoading() {
@@ -94,53 +130,140 @@
             if (loading) loading.remove();
         }
 
+        // Função que simula o efeito de digitação letra por letra
+        async function exibirComEfeitoDigitacao(elemento, textoHTML) {
+            // Cria um elemento temporário para processar o HTML
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = textoHTML;
+
+            // Processa cada elemento filho
+            for (const child of tempDiv.childNodes) {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    // É texto puro - exibe letra por letra
+                    const texto = child.textContent;
+                    const p = document.createElement('p');
+                    elemento.appendChild(p);
+
+                    for (let i = 0; i < texto.length; i++) {
+                        p.textContent += texto[i];
+                        scrollToBottom();
+                        await new Promise(resolve => setTimeout(resolve, 10)); // 10ms por caractere
+                    }
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    // É um elemento HTML
+                    if (child.classList.contains('ciclo-header') ||
+                        child.classList.contains('semana-header') ||
+                        child.classList.contains('material-item') ||
+                        child.classList.contains('material-link') ||
+                        child.classList.contains('separador')) {
+                        // Para elementos formatados, adiciona de uma vez
+                        const clonedElement = child.cloneNode(true);
+                        elemento.appendChild(clonedElement);
+                        scrollToBottom();
+                        await new Promise(resolve => setTimeout(resolve, 50));
+                    } else if (child.tagName === 'P') {
+                        // Para parágrafos, exibe letra por letra
+                        const p = document.createElement('p');
+                        elemento.appendChild(p);
+                        const texto = child.textContent;
+
+                        for (let i = 0; i < texto.length; i++) {
+                            p.textContent += texto[i];
+                            scrollToBottom();
+                            await new Promise(resolve => setTimeout(resolve, 10));
+                        }
+                    } else {
+                        // Outros elementos HTML - adiciona de uma vez
+                        const clonedElement = child.cloneNode(true);
+                        elemento.appendChild(clonedElement);
+                        scrollToBottom();
+                        await new Promise(resolve => setTimeout(resolve, 30));
+                    }
+                }
+            }
+        }
+
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            if (isProcessing) return;
+
             const pergunta = input.value.trim();
             if (!pergunta) return;
 
+            isProcessing = true;
+            btnEnviar.disabled = true;
+            input.disabled = true;
+
+            // Exibe a pergunta do usuário
             createMessage(pergunta, 'user');
             input.value = '';
+
+            // Exibe loading
             showLoading();
 
             try {
-                const response = await fetch('{{ url_for("chat") }}', {
+                // Faz a requisição
+                const response = await fetch('/enviar_mensagem', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams({ pergunta })
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ pergunta })
                 });
 
-                const html = await response.text();
+                const data = await response.json();
+
+                // Remove loading
                 removeLoading();
 
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = html;
-                const lastAssistantMsg = tempDiv.querySelector('.assistant-message:last-child .message-content');
+                if (data.sucesso) {
+                    // Cria a mensagem da IA (vazia inicialmente)
+                    const assistantMsgContent = createMessage('', 'assistant');
 
-                if (lastAssistantMsg) {
-                    createMessage(lastAssistantMsg.innerHTML, 'assistant');
+                    // Exibe com efeito de digitação
+                    await exibirComEfeitoDigitacao(assistantMsgContent, data.resposta);
+                } else {
+                    createMessage('<p class="erro">❌ Erro ao processar a mensagem.</p>', 'assistant');
                 }
+
             } catch (error) {
+                console.error('Erro:', error);
                 removeLoading();
-                createMessage('❌ Erro ao se comunicar com o servidor.', 'assistant');
-                console.error(error);
+                createMessage('<p class="erro">❌ Erro ao se comunicar com o servidor.</p>', 'assistant');
+            } finally {
+                isProcessing = false;
+                btnEnviar.disabled = false;
+                input.disabled = false;
+                input.focus();
             }
         });
 
-        clearBtn.addEventListener('click', () => {
-            fetch('/limpar', { method: 'POST' })
-                .then(response => {
-                    if (response.ok) {
-                        chatMessages.innerHTML = `
-                            <div class="message assistant-message">
-                                <div class="message-content"><p>Conversa limpa. Como posso ajudar?</p></div>
-                            </div>`;
-                        scrollToBottom();
-                    }
-                });
+        clearBtn.addEventListener('click', async () => {
+            if (!confirm('Deseja limpar o histórico da conversa atual?')) return;
+
+            try {
+                const response = await fetch('/limpar', { method: 'POST' });
+
+                if (response.ok) {
+                    chatMessages.innerHTML = `
+                        <div class="message assistant-message">
+                            <div class="message-content">
+                                <p>Conversa limpa. Como posso ajudar?</p>
+                            </div>
+                        </div>`;
+                    scrollToBottom();
+                }
+            } catch (error) {
+                console.error('Erro ao limpar:', error);
+            }
         });
 
+        // Scroll inicial
         scrollToBottom();
+
+        // Auto-focus no input
+        input.focus();
     </script>
 </body>
 </html>

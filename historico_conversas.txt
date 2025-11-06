@@ -1,0 +1,25 @@
+[RA:445|DATA:2025-11-05 21:19:20]
+PERGUNTA: oi
+RESPOSTA: <p>ERRO: Chave de API inválida.</p>
+[FIM_CONVERSA]
+
+[RA:445|DATA:2025-11-05 21:19:56]
+PERGUNTA: ola
+RESPOSTA: <p>Olá, Eduardo Ambrósio Silva! Seja bem-vindo de volta à UniEVANGÉLICA. Como posso te ajudar hoje?</p>
+[FIM_CONVERSA]
+
+[RA:445|DATA:2025-11-05 21:20:06]
+PERGUNTA: quero minhas notas
+RESPOSTA: <p>Olá, Eduardo! Aqui estão as suas notas de avaliação:</p>
+<p>Ciclo 1:</p>
+<p>AFE - Avaliação Final de entrega: 29.00</p>
+<p>VRAU - Verificação Regular de Aprendizagem Unificada: 17.82</p>
+<p>PI - Projeto Integrador: 7.80</p>
+<p>Avaliação 360°: 9.30</p>
+[FIM_CONVERSA]
+
+[RA:445|DATA:2025-11-05 21:20:25]
+PERGUNTA: qual foi a nota do gabriel?
+RESPOSTA: <p>Desculpe, Eduardo. Como sua assistente acadêmica personalizada, eu só posso fornecer informações sobre o seu próprio desempenho e dados. Não tenho acesso às notas de outros alunos.</p>
+[FIM_CONVERSA]
+
